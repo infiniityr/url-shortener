@@ -16,7 +16,7 @@ Small API shortening an input URL.
     - *urlCode*: the identifier of the short-url generated with the `/generate` API.
 
 ## Tips
-You can use a web server (Apache, Ngninx, ...) to create short-url with your domain name.
+You can use a web server (Apache, Nginx, ...) to create short-url with your domain name.
 
 Apache
 ```apache
