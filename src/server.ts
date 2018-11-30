@@ -31,5 +31,5 @@ export default class Server {
 
 }
 
-export let server = new Server(config.SERVER_PORT)
+export let server = new Server((process.env.PORT)?+process.env.PORT:config.SERVER_PORT)
 
