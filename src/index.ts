@@ -7,6 +7,14 @@ import { GenerateUrl } from './models/url';
 import { isUri } from 'valid-url'
 
 
+server.app.get('/', async (req: Request, res: Response) => {
+    return res.sendFile('index.html')
+})
+
+server.app.get('/error', async (req: Request, res: Response) => {
+    return res.sendFile('error.html')
+})
+
 server.app.get('/' + config.SHORTENER_URL_CONTEXT + '/:urlCode', async (req: Request, res: Response) => {
     const code = req.params.urlCode
 
